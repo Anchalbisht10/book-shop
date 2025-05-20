@@ -1,0 +1,213 @@
+html, body, #root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;    /* This hides vertical scroll */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  box-sizing: border-box;
+}
+.bookshop-container {
+  height: 100vh;           /* Not min-height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 16px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.shop-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.books-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 12px;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+  padding: 18px 12px 14px 12px;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(67,233,123,0.13), 0 2px 8px rgba(31,38,135,0.08);
+}
+
+.book-img {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.book-title {
+  font-size: 1.08rem;
+  font-weight: bold;
+  margin: 0 0 6px 0;
+  text-align: center;
+  color: #222;
+}
+
+.book-desc {
+  font-size: 0.96rem;
+  color: #444;
+  min-height: 32px;
+  text-align: center;
+  margin-bottom: 8px;
+  line-height: 1.25;
+  word-break: break-word;
+  max-width: 180px;
+}
+
+.book-price {
+  font-size: 1.02rem;
+  color: #43e97b;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.book-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.delete-btn, .update-btn {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.94rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.delete-btn {
+  background: #ffdde1;
+  color: #d7263d;
+}
+
+.delete-btn:hover {
+  background: #d7263d;
+  color: #fff;
+}
+
+.update-btn {
+  background: #d1f7c4;
+  color: #1b5e20;
+}
+
+.update-btn:hover {
+  background: #43e97b;
+  color: #fff;
+}
+
+.add-btn {
+  margin: 18px 0 8px 0; /* More space below grid, less crowding */
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  font-size: 1.13rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(67,233,123,0.13);
+  transition: background 0.18s, transform 0.15s;
+  display: block;
+}
+
+.add-btn:hover {
+  background: linear-gradient(135deg, #38f9d7 0%, #43e97b 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 700px) {
+  .books-grid {
+    gap: 14px;
+    max-width: 98vw;
+  }
+  .book-card {
+    width: 90vw;
+    max-width: 260px;
+  }
+  .book-img {
+    width: 70vw;
+    max-width: 120px;
+    height: 120px;
+  }
+}
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn {
+  padding: 10px 28px;
+  background: #43e97b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+.header-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.logout-btn {
+  padding: 6px 16px;
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.97rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 18px;
+  transition: background 0.15s;
+}
+
+.logout-btn:hover {
+  background: #b71c1c;
+}
+
+/* Add your book grid/card styles here as needed */
