@@ -58,9 +58,8 @@ node app.js
 ## About the Developer
 
 *Anchal Bisht*  
-[anchal001bisht@gmail.com](mailto:anchal001bisht@gmail.com)  
-[GitHub: Anchalbi](https://github.com/Anchalbisht10)
-
+Email: anchal001bisht@gmail.com
+GitHub: https://github.com/Anchalbisht10
 ---
 
 *Note:* This project is not hosted online. Please follow the steps above to run it locally.
